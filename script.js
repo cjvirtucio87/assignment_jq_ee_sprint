@@ -138,6 +138,7 @@ $(document).ready(function(e) {
 
   // Clicking this triggers the menu <ul>.
   $("#dropdown-bar").on("click", function(e) {
+    $(document).off("click");
     $("#dropdown-menu").trigger("click");
   });
 
